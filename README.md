@@ -102,9 +102,9 @@ Policy: Action: Allow, Selector: Emails, Value: your-email@gmail.com.
 
 ## 💻 Phase 4: Client-Side Configuration (Windows)
 # 1. Install cloudflared on Windows
-Download the .msi from Cloudflare GitHub.
+Download the .msi from Cloudflare GitHub:https://github.com/cloudflare/cloudflared/releases
 
-Run the installer and open PowerShell as Admin.
+**Run the installer and open PowerShell as Admin.**
 
 # 2. DNS & Connection Setup
 If your ISP blocks Cloudflare domains (no such host error):
@@ -116,9 +116,11 @@ Flush DNS: ipconfig /flushdns.
 Connect VPN (if ISP blocks the initial handshake).
 
 # 3. Authenticate Client
+```bash
 PowerShell
 cloudflared access login https://mridu.me
-A browser window will open. Login with your email and approve.
+
+```
 
 ## 4. Final SSH Connection
 ```bash
