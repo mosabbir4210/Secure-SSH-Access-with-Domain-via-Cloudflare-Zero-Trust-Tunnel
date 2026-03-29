@@ -6,6 +6,13 @@ or exposing the server's public IP.
 ## 🚀 Project Overview
 This project demonstrates how to use **Cloudflare Zero Trust (Argo Tunnel)** to bypass ISP restrictions and NAT firewalls. 
 It provides a "Zero Trust" security model where the server is completely hidden from the public internet, and only authorized users can access it via a secure tunnel.
+
+## 🧱 Architecture Overview
+
+<p align="center">
+  <img src="Screenshots/overview.png" alt="Secure Domain SSH Overview" width="850">
+</p>
+
 ![Secure Domain SSH Overview](Screenshots/overview.png)
 ## 🛠️ Tech Stack
 * **Server OS:** AlmaLinux 9 (RHEL-based)
