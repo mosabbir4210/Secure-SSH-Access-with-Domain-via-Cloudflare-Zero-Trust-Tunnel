@@ -1,4 +1,4 @@
-# 🛡️ Secure SSH Access with Domain via Cloudflare Zero Trust Tunnel
+# 🛡️ Secure Server SSH Access with Domain via Cloudflare Zero Trust Tunnel
 
 A comprehensive guide and documentation on setting up a secure, encrypted SSH connection with your Domain to a remote **AlmaLinux** server without opening any inbound ports (No Port Forwarding) 
 or exposing the server's public IP.
