@@ -51,6 +51,7 @@ Name the tunnel: my-alma-server.
 
 Save Tunnel and you will see the installation commands for different OS. Copy the Token from the command.**
 
+
 ## 🐧Phase 2: Server-Side Installation (AlmaLinux)
 Login to your AlmaLinux terminal and follow these steps:
 
@@ -106,6 +107,10 @@ Select Self-hosted.
 Domain: mridu.me.
 
 Policy: Action: Allow, Selector: Emails, Value: your-email@gmail.com.
+
+<p align="center">
+  <img src="Screenshots/hostname.png" alt="Public Host Name Config." width="850">
+</p>
 
 ## 💻 Phase 4: Client-Side Configuration (Windows)
 # 1. Install cloudflared on Windows
