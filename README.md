@@ -24,14 +24,14 @@ Cloudflare acts as a proxy.
 
 The client connects to Cloudflare, which pipes the traffic to the server.
 
-🛠️ Prerequisites
+## 🛠️ Prerequisites
 A domain name (e.g., mridu.me) added to a Cloudflare account.
 
 A server running AlmaLinux 9.
 
 A Windows/Linux laptop for the client side.
 
-📡 Phase 1: Cloudflare Dashboard Setup
+## 📡 Phase 1: Cloudflare Dashboard Setup
 Log in to the Cloudflare Zero Trust Dashboard.
 
 Navigate to Networks > Tunnels and click Create a Tunnel.
@@ -42,10 +42,10 @@ Name the tunnel: my-alma-server.
 
 Save Tunnel and you will see the installation commands for different OS. Copy the Token from the command.
 
-🐧 Phase 2: Server-Side Installation (AlmaLinux)
+##🐧 Phase 2: Server-Side Installation (AlmaLinux)
 Login to your AlmaLinux terminal and follow these steps:
 
-1. Install cloudflared agent
+## 1. Install cloudflared agent
 ```bash
 # Download the RPM package
 curl -L --output cloudflared.rpm https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-x86_64.rpm
