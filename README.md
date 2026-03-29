@@ -34,15 +34,17 @@ A Windows/Linux laptop for the client side.
 ## 📡 Phase 1: Cloudflare Dashboard Setup
 Log in to the Cloudflare Zero Trust Dashboard.
 
-Navigate to Networks > Tunnels and click Create a Tunnel.
+https://dash.cloudflare.com/c7ff14348b1847c3c4ef3e76db18dbaf/one/networks/connectors
+
+**Navigate to Networks > Tunnels and click Create a Tunnel.
 
 Select Cloudflare Managed (Dashboard).
 
 Name the tunnel: my-alma-server.
 
-Save Tunnel and you will see the installation commands for different OS. Copy the Token from the command.
+Save Tunnel and you will see the installation commands for different OS. Copy the Token from the command.**
 
-##🐧 Phase 2: Server-Side Installation (AlmaLinux)
+## 🐧Phase 2: Server-Side Installation (AlmaLinux)
 Login to your AlmaLinux terminal and follow these steps:
 
 ## 1. Install cloudflared agent
