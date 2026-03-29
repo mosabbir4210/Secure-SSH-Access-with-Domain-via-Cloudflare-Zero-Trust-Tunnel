@@ -50,33 +50,33 @@ Login to your AlmaLinux terminal and follow these steps:
 # Download the RPM package
 curl -L --output cloudflared.rpm https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-x86_64.rpm
 ```
-# Install the package
+## Install the package
 ```bash
 sudo yum localinstall -y cloudflared.rpm
 ```
-2. Connect to the Tunnel
+## 2. Connect to the Tunnel
 Paste the token command you copied from Phase 1:
 
 ```bash
 sudo cloudflared service install <YOUR_SECRET_TOKEN>
 ```
 
-3. Networking Fix (Crucial Step)
+## 3. Networking Fix (Crucial Step)
 If you encounter Network is unreachable, it's likely due to IPv6 issues with your ISP. Disable it:
 
 ```bash
 sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
 sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
 ```
-4. Verify Service
+## 4. Verify Service
 ```bash
 sudo systemctl start cloudflared
 sudo systemctl status cloudflared
 ```
-🔐 Phase 3: Security & Access Policy
+## 🔐 Phase 3: Security & Access Policy
 Back in the Cloudflare Dashboard:
 
-1. Set Public Hostname
+## 1. Set Public Hostname
 Go to your Tunnel Configuration > Public Hostname.
 
 Subdomain: ssh (Optional, or leave blank for root domain mridu.me).
@@ -87,7 +87,7 @@ Service: SSH.
 
 URL: localhost:22.
 
-2. Create Access Application
+## 2. Create Access Application
 This ensures only YOU can trigger the tunnel.
 
 Go to Access > Applications > Add an Application.
@@ -98,13 +98,13 @@ Domain: mridu.me.
 
 Policy: Action: Allow, Selector: Emails, Value: your-email@gmail.com.
 
-💻 Phase 4: Client-Side Configuration (Windows)
-1. Install cloudflared on Windows
+## 💻 Phase 4: Client-Side Configuration (Windows)
+# 1. Install cloudflared on Windows
 Download the .msi from Cloudflare GitHub.
 
 Run the installer and open PowerShell as Admin.
 
-2. DNS & Connection Setup
+# 2. DNS & Connection Setup
 If your ISP blocks Cloudflare domains (no such host error):
 
 Set DNS to 8.8.8.8 (Google).
@@ -113,12 +113,12 @@ Flush DNS: ipconfig /flushdns.
 
 Connect VPN (if ISP blocks the initial handshake).
 
-3. Authenticate Client
+# 3. Authenticate Client
 PowerShell
 cloudflared access login https://mridu.me
 A browser window will open. Login with your email and approve.
 
-4. Final SSH Connection
+## 4. Final SSH Connection
 ```bash
 PowerShell
 ssh -o "ProxyCommand=cloudflared access ssh --hostname mridu.me" mridu@mridu.me
