@@ -141,7 +141,7 @@ ssh -o "ProxyCommand=cloudflared access ssh --hostname mridu.me" mridu@mridu.me
 ```
 
 <p align="center">
-  <img src="Screenshots/ssh_ligin.png" alt="Secure Domain SSH Login" width="850">
+  <img src="Screenshots/ssh_login.png" alt="Secure Domain SSH Login" width="850">
 </p>
 
 ## 👨‍💻 Author
