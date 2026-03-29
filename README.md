@@ -21,7 +21,8 @@ It provides a "Zero Trust" security model where the server is completely hidden 
 * **Protocol:** SSH (Secure Shell)
 
 ---
-🏗️ Architecture Overview
+## 🏗️Architecture Overview
+
 Traditional SSH requires opening Port 22 to the internet, which is risky. This project uses a Reverse Tunnel:
 
 The server initiates an outbound connection to Cloudflare.
