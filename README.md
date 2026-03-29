@@ -10,7 +10,7 @@ It provides a "Zero Trust" security model where the server is completely hidden 
 ## 🧱 Architecture Overview
 
 <p align="center">
-  <img src="Screenshots/overview.png" alt="Secure Domain SSH Overview" width="850">
+  <img src="Screenshots/Overview.png" alt="Secure Domain SSH Overview" width="850">
 </p>
 
 ![Secure Domain SSH Overview](Screenshots/overview.png)
